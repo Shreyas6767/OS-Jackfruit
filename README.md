@@ -157,11 +157,12 @@ e. Scheduling Experiments
     
     
 ## 6. Scheduler Experiment Results
-###
- PID,  USER,  PR,  NI,  VIRT,  RES, SHR, S, %CPU, %MEM, TIME+, COMMAND
+
+PID,  USER,  PR,  NI,  VIRT,  RES, SHR, S, %CPU, %MEM, TIME+, COMMAND
 5421,  root,  20,  0,  1024,  412,  0,   R, 49.9, 0.1,0 :42.12 ,stay_alive
 5423,  root,  20,  0,  1024,  412,  0,   R, 49.7, 0.1,0 :40.05 ,stay_alive
 
+###
 Analysis of Results
 
     Fairness (CFS Algorithm): CPU usage was split almost exactly 50/50 when the second container was launched, proving the kernel treats isolated containers as equal entities.
